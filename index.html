@@ -1,91 +1,107 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pak Realty</title>
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #E2001A;
-            --secondary-color: #0072C6;
-            --text-color: #FFFFFF;
-            --background-color: #2D2D2D;
-            --hover-color: #00bcd4;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: var(--text-color);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 600px;
-        }
-
-        .container h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .container p {
-            font-size: 1.5em;
-            margin-bottom: 30px;
-        }
-
-        .countdown {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        .loader {
-            margin: 20px auto;
-            width: 50px;
-            height: 50px;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            border-top: 5px solid var(--hover-color);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: rgba(255, 255, 255, 0.8);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Yakında Sizlerleyiz!</h1>
-        <p>Sitemiz üzerinde çalışmalar devam ediyor. Çok yakında burada olacağız!</p>
-        <div class="loader"></div>
-        <p class="countdown">GÖKÇEHAN PAK ve EZGİ PAK</p>
-        <footer>&copy; 2024 PAK REALTY | Tüm Hakları Saklıdır</footer>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Pak Realty</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#agents">Agents</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2 class="handwriting">Welcome to Pak Realty</h2>
+            <p>Your trusted partner in real estate.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Pak Realty, where excellence meets expertise in real estate consultancy. As proud members of the prestigious RE/MAX Pasha family, we, Gökçehan Pak and Ezgi Pak, are dedicated to delivering unparalleled service and tailored solutions to meet your real estate needs.  With a passion for creating value and a commitment to integrity, we bring a wealth of knowledge and experience to every transaction. Whether you’re buying, selling, or leasing, our client-centric approach ensures that your goals are our top priority.
+            </p>
+        </div>
+    </section>
+
+    <section id="agents">
+        <div class="container">
+            <h2>Agents</h2>
+            <div class="agents-container">
+                <div class="agent">
+                    <div class="agent-photo-container">
+                        <a href="gokcehan-pak.html"><img src="gokcehan.jpg" alt="Gökçehan Pak" class="agent-photo"></a>
+                    </div>
+                    <div class="agent-info">
+                        <h3><a href="gokcehan-pak.html">Gökçehan Pak</a></h3>
+                        <p>Experienced real estate agent with a passion for helping clients find the perfect property.</p>
+                    </div>
+                </div>
+                <div class="agent">
+                    <div class="agent-photo-container">
+                        <a href="ezgi-pak.html"><img src="ezgi.jpg" alt="Ezgi Pak" class="agent-photo"></a>
+                    </div>
+                    <div class="agent-info">
+                        <h3><a href="ezgi-pak.html">Ezgi Pak</a></h3>
+                        <p>Dedicated and knowledgeable agent committed to providing exceptional service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            <p>Email: gokcehanpak@remaxpasha.com.tr</p>
+            <p>Phone: +90 506 316 55 53</p>
+            <p>Email: ezgipak@remaxpasha.com.tr</p>
+            <p>Phone: +90 552 408 04 78</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Address</h2>
+            <p>RE/MAX Pasha at Yavansu Mah. Süleyman Demirel Bulvarı No:194 Kuşadası / Aydın</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pak Realty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
