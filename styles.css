@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(to right, #e3e3e3, #eff5ff); /* Pale Background Gradient */
+    background: linear-gradient(to right, #e3e3e3, #eff5ff);
     background-attachment: fixed;
 }
 
@@ -16,12 +16,12 @@ body {
 
 /* Header Styles */
 header {
-    background-color: rgba(255, 255, 255, 0.1); /* semi-transparent */
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(to right, #ff5f6d, #ffc371);
     border-image-slice: 1;
-    color: #000; /* Changed to black for better contrast */
+    color: #000;
     padding: 0.5rem 0;
     position: fixed;
     top: 0;
@@ -58,10 +58,10 @@ header h1 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif; /* Ensuring consistent font usage */
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     flex: 1;
-    color: #000; /* Changed to black for better contrast */
+    color: #000;
 }
 
 nav ul {
@@ -78,7 +78,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000; /* Changed to black for better contrast */
+    color: #000;
     text-decoration: none;
     font-weight: 700;
     padding: 0.5rem 1rem;
@@ -120,14 +120,14 @@ nav ul li a:hover {
 /* Handwriting Font */
 .handwriting {
     font-family: 'Dancing Script', cursive;
-    font-size: 3rem; /* Increase the font size */
+    font-size: 3rem;
 }
 
 /* Section Styles */
 section {
     padding: 2rem 0;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.9);
     margin: 1rem auto;
     width: 100%;
     border-radius: 10px;
@@ -194,14 +194,14 @@ section#about, section#contact {
 /* Why Choose Us Section */
 #why-choose-us {
     padding: 4rem 2rem;
-    background: linear-gradient(to right, #ffffff, #f0f0f0); /* Subtle gradient background */
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 2rem 0;
-    opacity: 0; /* Start hidden for animation */
-    transform: translateY(20px); /* Start slightly down for animation */
-    animation: fadeInUp 1s ease forwards; /* Animate on load */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
 }
 
 #why-choose-us .container {
@@ -210,11 +210,11 @@ section#about, section#contact {
 }
 
 #why-choose-us h2 {
-    font-size: 3rem; /* Larger font size */
-    font-weight: 700; /* Bold font weight */
-    color: #343a40; /* Dark grey color */
-    margin-bottom: 2rem; /* Space below the title */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for effect */
+    font-size: 3rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #why-choose-us .content {
@@ -247,7 +247,7 @@ section#about, section#contact {
 
 #why-choose-us .stat i {
     font-size: 3rem;
-    color: #e11b22; /* Brand color */
+    color: #e11b22;
     margin-bottom: 1rem;
 }
 
@@ -332,7 +332,7 @@ section#about, section#contact {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #333;
-    font-family: 'Dancing Script', cursive; /* Decorative font for headings */
+    font-family: 'Dancing Script', cursive;
 }
 
 .info-section p {
@@ -371,6 +371,7 @@ canvas {
     margin-top: -50px;
     overflow: hidden;
 }
+
 /* Contact Form Styles */
 #contact-form {
     display: flex;
@@ -599,7 +600,7 @@ p {
 /* Kuşadası Sales Information Section */
 #kusadasi-sales {
     padding: 4rem 2rem;
-    background: linear-gradient(to right, #f8f9fa, #e9ecef); /* Subtle gradient background */
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -634,7 +635,7 @@ p {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #495057;
-    font-family: 'Dancing Script', cursive; /* Decorative font for the article heading */
+    font-family: 'Dancing Script', cursive;
 }
 
 #kusadasi-sales article p {
