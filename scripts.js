@@ -9,20 +9,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // Interactive charts using Chart.js library
     const chartData = {
         population: {
-            labels: ['2019', '2020', '2021', '2022', '2023'],
+            labels: ['2020', '2021', '2022', '2023', '2024'],
             datasets: [{
                 label: 'Population',
-                data: [100000, 105000, 110000, 115000, 120000],
+                data: [121493, 125812, 130835, 133177, 136124],
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
                 borderWidth: 1
             }]
         },
         propertyPrices: {
-            labels: ['2019', '2020', '2021', '2022', '2023'],
+            labels: ['2020', '2021', '2022', '2023', '2024'],
             datasets: [{
                 label: 'Average Property Prices',
-                data: [150000, 160000, 170000, 180000, 190000],
+                data: [750000, 1700000, 2650000, 3650000, 5850000],
                 backgroundColor: 'rgba(153, 102, 255, 0.2)',
                 borderColor: 'rgba(153, 102, 255, 1)',
                 borderWidth: 1
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
             datasets: [{
                 label: 'Average Temperature (°C)',
-                data: [10, 11, 13, 16, 20, 24, 28, 27, 24, 20, 15, 11],
+                data: [7, 9, 12, 16, 21, 26, 29, 29, 24, 19, 14, 10],
                 backgroundColor: 'rgba(255, 159, 64, 0.2)',
                 borderColor: 'rgba(255, 159, 64, 1)',
                 borderWidth: 1
@@ -103,4 +103,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
         lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
     });
+
+    // Slideshow functionality
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+    const showSlide = (index) => {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+        }
+        slides[index].classList.add("active");
+    };
+
+    const nextSlide = () => {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlide(slideIndex);
+    };
+
+    const prevSlide = () => {
+        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+        showSlide(slideIndex);
+    };
+
+    document.querySelector(".next").addEventListener("click", nextSlide);
+    document.querySelector(".prev").addEventListener("click", prevSlide);
+
+    let slideInterval = setInterval(nextSlide, 5000);
+
+    for (let slide of slides) {
+        slide.addEventListener("mouseenter", () => clearInterval(slideInterval));
+        slide.addEventListener("mouseleave", () => slideInterval = setInterval(nextSlide, 5000));
+    }
+
+    showSlide(slideIndex);
 });
