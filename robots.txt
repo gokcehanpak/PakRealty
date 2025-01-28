@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /private/
+
+# Image crawlers
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+
+# Site haritası
+Sitemap: https://pakrealty.com/sitemap.xml
+
+# Crawl-delay: 10 
