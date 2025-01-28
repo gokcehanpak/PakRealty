@@ -9,11 +9,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (mobileMenuBtn && mobileNav) {
         // Toggle menu
-        mobileMenuBtn.addEventListener('click', (e) => {
+        mobileMenuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
             e.stopPropagation();
-            mobileMenuBtn.classList.toggle('active');
+            
+            // Toggle active class
+            this.classList.toggle('active');
             mobileNav.classList.toggle('active');
-            body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+            
+            // Body scroll lock
+            if (mobileNav.classList.contains('active')) {
+                body.style.overflow = 'hidden';
+            } else {
+                body.style.overflow = '';
+            }
         });
 
         // Close menu when clicking outside
@@ -290,12 +299,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const body = document.body;
 
         if (mobileMenuBtn && mobileNav) {
-            // Toggle menu
-            mobileMenuBtn.addEventListener('click', (e) => {
+            // Toggle menu - Event listener'ı düzeltelim
+            mobileMenuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
                 e.stopPropagation();
-                mobileMenuBtn.classList.toggle('active');
+                
+                // Toggle active class
+                this.classList.toggle('active');
                 mobileNav.classList.toggle('active');
-                body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+                
+                // Body scroll lock
+                if (mobileNav.classList.contains('active')) {
+                    body.style.overflow = 'hidden';
+                } else {
+                    body.style.overflow = '';
+                }
             });
 
             // Close menu when clicking outside
@@ -315,19 +333,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     body.style.overflow = '';
                 });
             });
-
-            // Handle resize
-            window.addEventListener('resize', () => {
-                if (window.innerWidth > 768) {
-                    mobileMenuBtn.classList.remove('active');
-                    mobileNav.classList.remove('active');
-                    body.style.overflow = '';
-                }
-            });
         }
     };
 
-    initMobileMenu();
+    // DOM yüklendiğinde mobile menu'yü başlat
+    document.addEventListener('DOMContentLoaded', initMobileMenu);
 
     // Read More functionality
     const initReadMore = () => {
