@@ -13,6 +13,6 @@ Allow: /*.gif$
 Allow: /*.png$
 
 # Site haritası
-Sitemap: https://pakrealty.com/sitemap.xml
+Sitemap: https://pakrealty.com.tr/sitemap.xml
 
 # Crawl-delay: 10 
