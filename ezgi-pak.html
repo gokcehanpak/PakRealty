@@ -5,38 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezgi Pak - Pak Realty</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="sticky-header">
         <div class="header-content">
             <div class="logo">
-                <img src="remaxpashalogo.jpg" alt="Pak Realty Logo">
+                <a href="index.html">
+                    <img src="remaxpashalogo.png" alt="RE/MAX Pasha Logo" class="logo-img">
+                </a>
+                <h1 class="brand-title">Pak Realty | RE/MAX Pasha</h1>
             </div>
-            <h1>Pak Realty | Members of RE/MAX Pasha</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="index.html#agents">Agents</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#agents" class="nav-link">Agents</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="agent-bio">
+    <section id="agent-profile">
         <div class="container">
-            <h2>Ezgi Pak</h2>
-            <div class="agent-profile">
-                <div class="agent-photo-container">
-                    <img src="ezgi.jpg" alt="Ezgi Pak" class="agent-photo-large">
+            <div class="agent-bio">
+                <div class="agent-header">
+                    <div class="agent-photo-container">
+                        <img src="ezgi.jpg" alt="Ezgi Pak" class="agent-photo">
+                    </div>
+                    <h2>Ezgi Pak</h2>
+                    <p class="position">Real Estate Consultant</p>
                 </div>
+
                 <div class="agent-details">
-                    <p>Ezgi Pak is a dedicated and knowledgeable real estate agent committed to providing exceptional service. With a background in sales and marketing, Ezgi brings a unique perspective to the real estate industry and is known for their ability to connect with clients and understand their needs.</p>
-                    <p>Ezgi's commitment to excellence, strong communication skills, and in-depth market knowledge ensure that clients receive the best possible service. Whether you are looking to buy or sell, Ezgi is here to help you achieve your real estate goals.</p>
-                    <p>Contact Ezgi Pak at <a href="mailto:ezgipak@remaxpasha.com.tr">ezgipak@remaxpasha.com.tr</a> or call +90 552 408 04 78.</p>
+                    <div class="experience">
+                        <h3>Professional Experience</h3>
+                        <ul>
+                            <li>5+ years in client experience management</li>
+                            <li>Internationally certified consultant</li>
+                            <li>RE/MAX Member</li>
+                        </ul>
+                    </div>
+
+                    <div class="specializations">
+                        <h3>Specializations</h3>
+                        <ul>
+                            <li>Customer Satisfaction</li>
+                            <li>International Client Relations</li>
+                            <li>Project Management</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><strong>Phone:</strong> +90 552 408 04 78</p>
+                        <p><strong>Email:</strong> ezgipak@remaxpasha.com.tr</p>
+                        <p><strong>Address:</strong> RE/MAX Pasha Kuşadası</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,8 +78,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Pak Realty. All rights reserved.</p>
+            <p>&copy; 2025 Pak Realty. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
