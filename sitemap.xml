@@ -3,36 +3,28 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://pakrealty.com/</loc>
+    <loc>https://pakrealty.com.tr/</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://pakrealty.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pakrealty.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pakrealty.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pakrealty.com.tr/tr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pakrealty.com.tr/en/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pakrealty.com.tr/ru/"/>
     <image:image>
-      <image:loc>https://pakrealty.com/image_night.png</image:loc>
+      <image:loc>https://pakrealty.com.tr/image_night.png</image:loc>
       <image:title>Pak Realty Kuşadası Office</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://pakrealty.com/gokcehan-pak.html</loc>
+    <loc>https://pakrealty.com.tr/gokcehan-pak.html</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pakrealty.com/ezgi-pak.html</loc>
+    <loc>https://pakrealty.com.tr/ezgi-pak.html</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pakrealty.com/tr/</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pakrealty.com/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pakrealty.com/ru/"/>
   </url>
 </urlset> 
