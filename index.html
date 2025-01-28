@@ -3,41 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pak Realty</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Pak Realty | RE/MAX Pasha</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <header>
+    <!-- Header -->
+    <header class="sticky-header">
         <div class="header-content">
             <div class="logo">
-                <img src="remaxpashalogo.jpg" alt="Pak Realty Logo">
+                <a href="index.html">
+                    <img src="remaxpashalogo.png" alt="RE/MAX Pasha Logo" class="logo-img">
+                </a>
+                <h1 class="brand-title">Pak Realty | RE/MAX Pasha</h1>
             </div>
-            <h1>Pak Realty | Members of RE/MAX Pasha</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#agents">Agents</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            
+            <!-- Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#agents" class="nav-link">Agents</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="hero">
+    <!-- Hero Section -->
+    <section id="hero" class="parallax-section">
         <div class="hero-content">
-            <h2 class="handwriting">Welcome to Pak Realty</h2>
-            <p>Your trusted partner in real estate.</p>
+            <h1 class="hero-title">Your Trusted Real Estate Partner</h1>
+            <p class="hero-subtitle">Premium Properties in Kusadasi</p>
         </div>
     </section>
-
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Welcome to Pak Realty, where excellence meets expertise in real estate consultancy. As proud members of the prestigious RE/MAX Pasha family, we, Gökçehan Pak and Ezgi Pak, are dedicated to delivering unparalleled service and tailored solutions to meet your real estate needs. With a passion for creating value and a commitment to integrity, we bring a wealth of knowledge and experience to every transaction. Whether you’re buying, selling, or leasing, our client-centric approach ensures that your goals are our top priority.</p>
+            <p>Welcome to Pak Realty, where excellence meets expertise in real estate consultancy. As proud members of the prestigious RE/MAX Pasha family, we, Gökçehan Pak and Ezgi Pak, are dedicated to delivering unparalleled service and tailored solutions to meet your real estate needs. With a passion for creating value and a commitment to integrity, we bring a wealth of knowledge and experience to every transaction. Whether you're buying, selling, or leasing, our client-centric approach ensures that your goals are our top priority.</p>
         </div>
     </section>
 
@@ -149,51 +162,66 @@
 <!-- Slideshow Container -->
 <div class="slideshow-container">
 
-    <!-- Kuşadası Sales Information Section -->
+    <!-- Slide 1 - Sales Information -->
     <section id="slide1" class="slide">
         <div class="container">
             <h2>Kuşadası Sales Information</h2>
-            <div class="content">
-                <p>Kuşadası is one of the districts with the highest sales. In February, it saw a significant increase in sales levels.</p>
-                <article>
-                    <h3>High Sales Levels in Kuşadası</h3>
-                    <p>According to recent data, Kuşadası has become one of the most popular districts in terms of real estate sales. In February, the district saw an unprecedented level of transactions, making it a hot spot for buyers and investors alike.</p>
-                    <p>The surge in sales can be attributed to a variety of factors, including the district's appealing coastal location, ongoing urban development projects, and favorable market conditions. Many new residential and commercial properties have been developed, attracting a diverse group of buyers.</p>
-                    <p>This trend is expected to continue as more people discover the benefits of living and investing in Kuşadası. The local government is also playing a significant role by improving infrastructure and providing incentives for real estate development.</p>
-                    <p>For more details on this topic, you can read the full article on <a href="https://tr.tradingview.com/news/matriks:5073678:0/#:~:text=En%20%C3%A7ok%20sat%C4%B1%C5%9F%20yap%C4%B1lan%20il%C3%A7eler%20aras%C4%B1nda%20yer%20alan%20Ku%C5%9Fadas%C4%B1%20%C5%9Eubat,gibi%20y%C3%BCksek%20bir%20seviye%20g%C3%B6r%C3%BCld%C3%BC." target="_blank">TradingView</a>.</p>
-                </article>
+            <div class="slide-content">
+                <div class="content-preview">
+                    <p>Kuşadası is one of the districts with the highest sales. In February, it saw a significant increase in sales levels.</p>
+                </div>
+                <button class="read-more-btn">Read More</button>
+                <div class="content-full">
+                    <article>
+                        <h3>High Sales Levels in Kuşadası</h3>
+                        <p>According to recent data, Kuşadası has become one of the most popular districts in terms of real estate sales. In February, the district saw an unprecedented level of transactions, making it a hot spot for buyers and investors alike.</p>
+                        <p>The surge in sales can be attributed to a variety of factors, including the district's appealing coastal location, ongoing urban development projects, and favorable market conditions. Many new residential and commercial properties have been developed, attracting a diverse group of buyers.</p>
+                        <p>This trend is expected to continue as more people discover the benefits of living and investing in Kuşadası. The local government is also playing a significant role by improving infrastructure and providing incentives for real estate development.</p>
+                        <p>For more details on this topic, you can read the full article on <a href="https://tr.tradingview.com/news/matriks:5073678:0/#:~:text=En%20%C3%A7ok%20sat%C4%B1%C5%9F%20yap%C4%B1lan%20il%C3%A7eler%20aras%C4%B1nda%20yer%20alan%20Ku%C5%9Fadas%C4%B1%20%C5%9Eubat,gibi%20y%C3%BCksek%20bir%20seviye%20g%C3%B6r%C3%BCld%C3%BC." target="_blank">TradingView</a>.</p>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Kuşadası Real Estate Market Report Section -->
+    <!-- Slide 2 - Market Report -->
     <section id="slide2" class="slide">
         <div class="container">
             <h2>Kuşadası Real Estate Market Report - December 2024</h2>
-            <div class="content">
-                <p>December 2024 has seen remarkable activity in the Kuşadası real estate market. The district continues to attract buyers and investors due to its prime coastal location and ongoing development projects.</p>
-                <article>
-                    <h3>Market Overview</h3>
-                    <p>The real estate market in Kuşadası has experienced a significant increase in transactions. This growth is driven by both domestic and international buyers looking for investment opportunities and holiday homes.</p>
-                    <p>Property prices have shown a steady upward trend, with a noticeable increase in demand for luxury apartments and villas. The local government’s initiatives to improve infrastructure have also contributed to the market's positive outlook.</p>
-                    <p>For more details, read the full report on our website or contact our real estate experts for personalized advice.</p>
-                </article>
+            <div class="slide-content">
+                <div class="content-preview">
+                    <p>December 2024 has seen remarkable activity in the Kuşadası real estate market. The district continues to attract buyers and investors due to its prime coastal location and ongoing development projects.</p>
+                </div>
+                <button class="read-more-btn">Read More</button>
+                <div class="content-full">
+                    <article>
+                        <h3>Market Overview</h3>
+                        <p>The real estate market in Kuşadası has experienced a significant increase in transactions. This growth is driven by both domestic and international buyers looking for investment opportunities and holiday homes.</p>
+                        <p>Property prices have shown a steady upward trend, with a noticeable increase in demand for luxury apartments and villas. The local government's initiatives to improve infrastructure have also contributed to the market's positive outlook.</p>
+                        <p>For more details, read the full report on our website or contact our real estate experts for personalized advice.</p>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Living in Kuşadası: A Comprehensive Guide Section -->
+    <!-- Slide 3 - Comprehensive Guide -->
     <section id="slide3" class="slide">
         <div class="container">
             <h2>Living in Kuşadası: A Comprehensive Guide</h2>
-            <div class="content">
-                <p>Kuşadası offers a unique blend of modern living and rich cultural heritage. Whether you are planning to move here or just visit, this guide provides all the information you need.</p>
-                <article>
-                    <h3>Why Choose Kuşadası?</h3>
-                    <p>Kuşadası is known for its beautiful beaches, vibrant nightlife, and historical sites. The town offers a high quality of life with excellent amenities, including schools, hospitals, and shopping centers.</p>
-                    <p>The local community is welcoming and diverse, making it an ideal place for families, retirees, and expatriates. Kuşadası also boasts a variety of recreational activities, from water sports to hiking.</p>
-                    <p>Discover the best places to eat, shop, and explore in Kuşadası by reading our comprehensive guide. Whether you are looking for luxury or affordability, Kuşadası has something to offer everyone.</p>
-                </article>
+            <div class="slide-content">
+                <div class="content-preview">
+                    <p>Kuşadası offers a unique blend of modern living and rich cultural heritage. Whether you are planning to move here or just visit, this guide provides all the information you need.</p>
+                </div>
+                <button class="read-more-btn">Read More</button>
+                <div class="content-full">
+                    <article>
+                        <h3>Why Choose Kuşadası?</h3>
+                        <p>Kuşadası is known for its beautiful beaches, vibrant nightlife, and historical sites. The town offers a high quality of life with excellent amenities, including schools, hospitals, and shopping centers.</p>
+                        <p>The local community is welcoming and diverse, making it an ideal place for families, retirees, and expatriates. Kuşadası also boasts a variety of recreational activities, from water sports to hiking.</p>
+                        <p>Discover the best places to eat, shop, and explore in Kuşadası by reading our comprehensive guide. Whether you are looking for luxury or affordability, Kuşadası has something to offer everyone.</p>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
@@ -239,12 +267,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Pak Realty. All rights reserved.</p>
+            <p>&copy; 2025 Pak Realty. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="scripts.js"></script>
-    
+    <script src="./scripts.js"></script>
 </body>
 </html>
